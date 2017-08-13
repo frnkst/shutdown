@@ -1,0 +1,15 @@
+{
+  "name": "shutdown",
+  "version": "1.0.0",
+  "description": "Shutdown pc over speech",
+  "main": "shutdown.js",
+  "scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "sudo node start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

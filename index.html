@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+		<script>
+		if (annyang) {
+			console.log('started annyang');
+
+			var commands = {  
+				'shutdown': function() {
+					console.log('ok shutdown');
+					var xhttp = new XMLHttpRequest();
+					xhttp.open("GET", "shutdown", true);
+					xhttp.send();
+				}
+			};
+
+			// Add our commands to annyang
+			annyang.addCommands(commands);
+
+			// Start listening. You can call this here, or attach this call to an event, button, etc.
+			annyang.start();
+		}
+		</script>
+	</head>
+	<body>
+	</body>	
+</html>
